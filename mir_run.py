@@ -1,0 +1,1 @@
+curl -X POST "http://192.168.12.20/api/v2.0.0/mission_queue" -H "accept: application/json" -H "Authorization: Basic RGlzdHJpYnV0b3I6NjJmMmYwZjFlZmYxMGQzMTUyYzk1ZjZmMDU5NjU3NmU0ODJiYjhlNDQ4MDY0MzNmNGNmOTI5NzkyODM0YjAxNA==" -H "Accept-Language: en_US" -H "Content-Type: application/json" -d "{\"mission_id\" : \"5e794de3-6dfe-11eb-b44a-0001299df20a\"}"
