@@ -29,8 +29,39 @@ print(recieve_mission.text)
 
 # Sending command to the mir
 
-data = "{\"mission_id\" : \"5e794de3-6dfe-11eb-b44a-0001299df20a\" }"
+# {
+#         "guid": "79579d2e-c52c-11eb-be53-0001299df20a",
+#         "name": "coke",
+#         "url": "/v2.0.0/missions/79579d2e-c52c-11eb-be53-0001299df20a"
+#     },
+#     {
+#         "guid": "954fc36a-c52c-11eb-be53-0001299df20a",
+#         "name": "lp",
+#         "url": "/v2.0.0/missions/954fc36a-c52c-11eb-be53-0001299df20a"
+#     },
+#     {
+#     "guid": "446d8109-ba3b-11eb-bf22-0001299df20a",
+#     "name": "710_demo",
+#     "url": "/v2.0.0/missions/446d8109-ba3b-11eb-bf22-0001299df20a"
+#      },
 
-send_mission = requests.post(host + "mission_queue", headers = headers, data = data)
+# # run 710 demo
+# data = "{\"mission_id\" : \"446d8109-ba3b-11eb-bf22-0001299df20a\" }"
+#
+# send_mission = requests.post(host + "mission_queue", headers = headers, data = data)
+#
+# print(send_mission)
 
-print(send_mission)
+# # run coke
+# data = "{\"mission_id\" : \"79579d2e-c52c-11eb-be53-0001299df20a\" }"
+#
+# send_mission = requests.post(host + "mission_queue", headers = headers, data = data)
+#
+# print(send_mission)
+
+# # run lp
+# data = "{\"mission_id\" : \"954fc36a-c52c-11eb-be53-0001299df20a\" }"
+#
+# send_mission = requests.post(host + "mission_queue", headers = headers, data = data)
+#
+# print(send_mission)

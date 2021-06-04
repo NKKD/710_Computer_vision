@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import math
 import socket
 import requests
-from time import sleep
 
 host = "http://192.168.12.20/api/v2.0.0/"
 # Headers:
@@ -20,22 +19,22 @@ cam = 0
 cap = cv2.VideoCapture(cam)
 ret, frame = cap.read()
 #
-# define the socket IP address and port number
-Tcp_IP = '192.168.12.253'
-Tcp_Port = 5050
+# # define the socket IP address and port number
+# Tcp_IP = '192.168.12.253'
+# Tcp_Port = 5050
 
-
+# for localhost testing purpose
+Tcp_IP = '127.0.0.1'
+Tcp_Port = 8888
 
 def surf(img):
     print('surf starting')
 
     i = 0
 
-    while i < 3:
+    while i < 5:
 
         MIN_MATCH_COUNT = 10
-
-        sleep(2)
 
         ret, frame = cap.read()
 
@@ -193,7 +192,7 @@ if __name__ == '__main__':
         # show the received data
         print("received data: ", data)
 
-        if data != b'1':
+        if data != b'1\r\n':
             print("Communication lost")
             break
 
@@ -205,7 +204,7 @@ if __name__ == '__main__':
 
             R1, dst1 = surf(img)
 
-            if R1.size and dst1.size != 0:
+            if R1 and dst1 != 0:
 
                 print(R1, dst1,"coke")
 
