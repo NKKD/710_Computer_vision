@@ -19,7 +19,7 @@ headers = {"Content-Type": "application/json",
 cam = 0
 cap = cv2.VideoCapture(cam)
 ret, frame = cap.read()
-#
+
 # define the socket IP address and port number
 Tcp_IP = '192.168.12.253'
 Tcp_Port = 5050

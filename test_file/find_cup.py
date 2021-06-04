@@ -125,7 +125,7 @@ if __name__ == '__main__':
     # can add a if loop to retrieve different target image
     # img2 = cv2.imread('coke.jpg',0)
 
-    img1 = cv2.imread('coke.jpg', 0)
+    img1 = cv2.imread('../coke.jpg', 0)
 
     R, dst = surf()
 
